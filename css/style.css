@@ -37,6 +37,7 @@ h1, h2, h3 {
 
 .split-form > input:last-of-type,
 .reset-btn {
+  cursor: pointer;
   margin-top: 1rem;
   padding: 1rem 0;
   width: 100%;

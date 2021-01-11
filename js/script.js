@@ -14,6 +14,13 @@ document.getElementById("timer-setup-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
   buildTimerFromForm();
+  showTimer();
+});
+
+document.getElementById("reset-timer").addEventListener("click", (e) => {
+  e.preventDefault();
+
+  showTimerSetupForm();
 });
 
 function buildTimerFromForm() {
@@ -58,4 +65,20 @@ function buildTimer(params) {
   }
 
   return progressBar;
+}
+
+function showTimer() {
+  let timerSetupForm = document.getElementById("timer-setup-form");
+  let timer = document.getElementById("timer");
+  
+  timerSetupForm.classList.add("hide");
+  timer.classList.remove("hide");
+}
+
+function showTimerSetupForm() {
+  let timerSetupForm = document.getElementById("timer-setup-form");
+  let timer = document.getElementById("timer");
+
+  timerSetupForm.classList.remove("hide");
+  timer.classList.add("hide");
 }

@@ -16,8 +16,6 @@
   
       <input type="number" name="pomodoros" min="1" max="4" value="2">
 
-      <br>
-  
       <label for="">Length</label>
   
       <input type="number" name="length" min="20" max="90" value="30">
@@ -27,8 +25,6 @@
       <label for="">Break length</label>
   
       <input type="number" name="break_length" min="5" max="30" value="10">
-
-      <br>
   
       <label for="">Lunch break</label>
   
@@ -37,5 +33,38 @@
 
     <input type="submit" name="start_timer" value="Start">
   </form>
+
+  <div class="timer-view">
+    <div class="pomodoro">
+      <p><span>45</span>m</p>
+    </div>
+    
+    <div class="break">
+      <p><span>15</span>m</p>
+    </div>
+
+    <div class="pomodoro">
+      <p><span>45</span>m</p>
+    </div>
+    
+    <div class="break lunch">
+      <p><span>30</span>m</p>
+    </div>
+
+    <div class="pomodoro">
+      <p><span>45</span>m</p>
+    </div>
+    
+    <div class="break">
+      <p><span>15</span>m</p>
+    </div>
+
+    <div class="pomodoro">
+      <p><span>45</span>m</p>
+    </div>
+  </div>
+
+  <button class="reset-btn">Reset timer</button>
+
 </body>
 </html>

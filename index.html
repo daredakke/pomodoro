@@ -8,6 +8,34 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <h1>Pomodoro timer</h1>
+
+  <form class="split-form">
+    <div class="form-left">
+      <label for="">Pomodoros</label>
   
+      <input type="number" name="pomodoros" min="1" max="4" value="2">
+
+      <br>
+  
+      <label for="">Length</label>
+  
+      <input type="number" name="length" min="20" max="90" value="30">
+    </div>
+
+    <div class="form-right">
+      <label for="">Break length</label>
+  
+      <input type="number" name="break_length" min="5" max="30" value="10">
+
+      <br>
+  
+      <label for="">Lunch break</label>
+  
+      <input type="checkbox" name="lunch_break">
+    </div>
+
+    <input type="submit" name="start_timer" value="Start">
+  </form>
 </body>
 </html>

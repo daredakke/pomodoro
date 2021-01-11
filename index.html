@@ -6,11 +6,12 @@
   <title>Pomodoro</title>
 
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
   <h1>Pomodoro timer</h1>
 
-  <form class="split-form">
+  <form class="split-form" id="timer-setup-form">
     <div class="form-left">
       <label for="">Pomodoros</label>
   
@@ -34,37 +35,20 @@
     <input type="submit" name="start_timer" value="Start">
   </form>
 
-  <div class="timer-view">
+  <div class="timer-view" id="progress-bar">
     <div class="pomodoro">
-      <p><span>45</span>m</p>
+      <p><span id='pomodoro'>30</span>m</p>
     </div>
     
     <div class="break">
-      <p><span>15</span>m</p>
+      <p><span id='break'>10</span>m</p>
     </div>
 
     <div class="pomodoro">
-      <p><span>45</span>m</p>
-    </div>
-    
-    <div class="break lunch">
-      <p><span>30</span>m</p>
-    </div>
-
-    <div class="pomodoro">
-      <p><span>45</span>m</p>
-    </div>
-    
-    <div class="break">
-      <p><span>15</span>m</p>
-    </div>
-
-    <div class="pomodoro">
-      <p><span>45</span>m</p>
+      <p><span id='pomodoro'>30</span>m</p>
     </div>
   </div>
 
   <button class="reset-btn">Reset timer</button>
-
 </body>
 </html>
